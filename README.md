@@ -30,6 +30,21 @@
 - 原始图片 -> [Preprocessing] -> [Pretrained base model(MobileNet/Effnet/Transformer)] -> [Dense Layer] -> [Dropout Layer] -> [Softmax Layer] -> [类别0的概率, 类别1的概率,...类别n-1的概率(例如，使用直方图)]
 
 # Base Model 1: MobileNet V2
-![mobilenet]()
+![mobilenet](https://github.com/jxyzhang/840ss/blob/main/arch-mobilenet.png)
 # Base Model 2: EfficientNet
+![effnet](https://github.com/jxyzhang/840ss/blob/main/archefficientnet.png)
 # Base Model 3: Vit
+![vit](https://github.com/jxyzhang/840ss/blob/main/archvit.png)
+
+# Results
+- 在Taiwan和PlantVillage数据集上进行测试(...url)
+> 图：把result.xlsx文件作为图片
+> 图：训练过程准确率提升的图片(optional)
+
+# Conclusion
+- We proposed
+  -  一个轻量级的可用于移动设备的西红薯病虫害分类的解决方法/模型
+  -  适用于信号不能覆盖, 缺乏大量计算资源的场景
+- We demonstrated
+  - 我们的模型能够在不同数据集上取得较高的准确率(>95%)
+  - Vit/Transformer模型相对其他作为base model准确率更高
